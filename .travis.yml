@@ -28,6 +28,7 @@ matrix:
   - os: linux
     env: VCMI_PLATFORM='mxe' MXE_TARGET=i686-w64-mingw32.shared VCMI_CMAKE_FLAGS='-DENABLE_TEST=0'
     sudo: required
+    group: deprecated-2017Q4
   - os: osx
     env: VCMI_PLATFORM='mac'
 
