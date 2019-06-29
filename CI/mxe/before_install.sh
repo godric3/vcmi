@@ -38,5 +38,4 @@ fi # Disable
 sudo mv /usr/bin/cmake /usr/bin/cmake.orig
 sudo ln -s /usr/lib/mxe/usr/bin/$MXE_TARGET-cmake /usr/bin/cmake
 
-ls -R /usr/lib/mxe/usr/i686-w64-mingw32.shared
-ls -R /usr/lib/mxe/usr/i686-w64-mingw32.static
+ls -R /usr/share/cmake/Modules/
