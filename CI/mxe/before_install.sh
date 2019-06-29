@@ -37,3 +37,4 @@ fi # Disable
 # alias for CMake
 sudo mv /usr/bin/cmake /usr/bin/cmake.orig
 sudo ln -s /usr/lib/mxe/usr/bin/$MXE_TARGET-cmake /usr/bin/cmake
+sudo ln -s /usr/lib/mxe/usr/i686-w64-mingw32.static /usr/lib/mxe/usr/i686-w64-mingw32.shared
