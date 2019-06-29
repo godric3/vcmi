@@ -232,6 +232,7 @@ if(ENABLE_LAUNCHER)
 endif()
 
 if(ENABLE_LUA)
+	set(CMAKE_FIND_LIBRARY_SUFFIXES ".a;.so")
 	find_package(LuaJIT)
 	if(LUAJIT_FOUND)
 		message(STATUS "Using LuaJIT provided by system")
@@ -239,6 +240,7 @@ if(ENABLE_LUA)
 		message(STATUS "Cannot find LuaJIT! Fallback to using usual Lua.")
 		find_package(Lua REQUIRED)
 	endif()
+	set(CMAKE_FIND_LIBRARY_SUFFIXES ".so")
 endif()
 
 ############################################
